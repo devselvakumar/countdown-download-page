@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your PDF is Almost Ready</title>
+    <meta name="description" content="Please wait while we prepare your PDF download. Your document will be ready in a few seconds.">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- =========================================
+     PDF DOWNLOAD SECTION
+========================================= -->
+<div class="pdf-download-page">
+    <div class="pdf-download-content">
+
+        <!-- PDF ICON -->
+        <div class="pdf-document-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 4H28L38 14V44H13V4Z" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+                <path d="M28 4V14H38" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/>
+                <path d="M19 29C19 29 23 20 25 20C27 20 23 32 21 34C19 36 17 32 19 29Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18 34C21 33 29 28 31 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <!-- TITLE -->
+        <h1>Your PDF is Almost Ready</h1>
+
+        <!-- DESCRIPTION -->
+        <p class="pdf-download-description">
+            We are preparing your requested document.
+            Please wait a few seconds while we get
+            the download ready.
+        </p>
+
+        <!-- COUNTDOWN -->
+        <div class="pdf-countdown">
+            <div class="pdf-countdown-ring"></div>
+            <div class="pdf-countdown-inner">
+                <span class="pdf-countdown-number" id="pdfCountdown">15</span>
+                <span class="pdf-countdown-label">SECONDS</span>
+            </div>
+        </div>
+
+        <!-- STATUS -->
+        <div class="pdf-status">
+            <span class="pdf-status-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 16L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <span id="pdfStatus">Searching for your PDF...</span>
+        </div>
+
+        <!-- PROGRESS -->
+        <div class="pdf-progress">
+            <div class="pdf-progress-bar" id="pdfProgressBar"></div>
+        </div>
+
+        <!-- DOWNLOAD BUTTON -->
+        <a id="pdfDownloadButton" class="pdf-download-button" href="#">Download PDF</a>
+
+        <!-- DISCLAIMER -->
+        <div class="pdf-disclaimer">
+
+            <!-- WARNING ICON -->
+            <span class="pdf-disclaimer-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 3L22 20H2L12 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M12 9V14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <circle cx="12" cy="17" r="1" fill="currentColor"/>
+                </svg>
+            </span>
+
+            <span class="pdf-disclaimer-title">Disclaimer</span>
+
+            <p class="pdf-disclaimer-text">
+                Materials and question papers shared here
+                are not owned by us. All materials,
+                documents and question papers belong to
+                their respective owners. We share them
+                strictly for educational and informational
+                purposes.
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
